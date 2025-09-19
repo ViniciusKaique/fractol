@@ -6,13 +6,14 @@
 /*   By: vinpache <vinpache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 15:33:39 by vinpache          #+#    #+#             */
-/*   Updated: 2025/09/12 15:38:10 by vinpache         ###   ########.fr       */
+/*   Updated: 2025/09/14 11:36:08 by vinpache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
 int	get_color(int i, int limit, long double color_offset)
+
 {
 	double	t;
 	int		r;

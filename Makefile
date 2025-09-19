@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: vinpache <vinpache@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/09/12 15:21:06 by vinpache          #+#    #+#              #
-#    Updated: 2025/09/12 15:43:18 by vinpache         ###   ########.fr        #
+#    Created: 2025/09/14 11:39:07 by vinpache          #+#    #+#              #
+#    Updated: 2025/09/14 11:46:11 by vinpache         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,15 +30,15 @@ $(NAME): $(OBJS)
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW)🔧 Compiling:$(RESET) $<"
-	
+
 clean:
 	@rm -f $(OBJS)
 	@echo "$(RED)✅ Fractol objects fully cleaned!$(RESET)"
-	
+
 fclean: clean
 	@rm -f $(NAME)
 	@echo "$(RED)✅ Fractol program fully cleaned!$(RESET)"
-	
+
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re valgrind valgrind_mandelbrot valgrind_julia valgrind
